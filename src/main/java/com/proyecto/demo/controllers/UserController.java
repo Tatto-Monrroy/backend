@@ -1,9 +1,9 @@
 package com.proyecto.demo.controllers;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
-import org.mockito.internal.util.StringUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -42,6 +42,11 @@ public class UserController {
 		
 		return new RestResponse(HttpStatus.OK.value(), "Operacion Exitosa!");
 		
+	}
+	
+	@RequestMapping(value = "/getUsers", method = RequestMethod.GET)
+	public List<Usuario> getUsers() {
+		return this.userService.mostrarUsuarios();
 	}
 	
 	private boolean validate(Usuario user) {
