@@ -19,4 +19,10 @@ public interface UserService {
 	 */
 	List<Usuario> mostrarUsuarios();
 
+	/**
+	 * Eliminar un usuario con el id recibido
+	 * @param id
+	 */
+	void eliminarUsuario(Long id);
+
 }

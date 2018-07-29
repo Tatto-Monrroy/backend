@@ -23,4 +23,10 @@ public class UserServiceImpl implements UserService {
 	public List<Usuario> mostrarUsuarios() {
 		return this.userRepository.findAll();
 	}
+
+	@Override
+	public void eliminarUsuario(Long id) {
+		this.userRepository.deleteById(id);
+		
+	}
 }
