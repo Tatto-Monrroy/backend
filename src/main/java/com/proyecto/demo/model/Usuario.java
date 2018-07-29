@@ -13,22 +13,22 @@ public class Usuario extends ParentEntity {
 
 	private static final long serialVersionUID = -1272953663537907477L;
 	
-	@Column(name = "primer_nombre", nullable = false, length = 255)
+	@Column(name = "primer_nombre", nullable = false, length = 250)
 	private String primerNombre;
 	
-	@Column(name = "segundo_nombre", nullable = true, length = 255)
+	@Column(name = "segundo_nombre", nullable = true, length = 250)
 	private String segundoNombre;
 	
-	@Column(name = "apellido", nullable = false, length = 255)
+	@Column(name = "apellido", nullable = false, length = 200)
     private String apellido;
 	
-	@Column(name = "segundo_apellido", nullable = true, length = 255)
+	@Column(name = "segundo_apellido", nullable = true, length = 250)
 	private String segundoApellido;
 	
-	@Column(name = "telefono", nullable = true, length = 255)
+	@Column(name = "telefono", nullable = true, length = 30)
 	private String telefono;
 	
-	@Column(name = "direccion", nullable = false, length = 255)
+	@Column(name = "direccion", nullable = false, length = 200)
     private String direccion;
     
 	/**
